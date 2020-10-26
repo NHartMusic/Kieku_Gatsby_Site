@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Kieku Teknologia`,
+    description: `Basic Gatsby site for Kieku Records new tech division, spearheaded by Nick Hart`,
+    author: `Nick Hart`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
