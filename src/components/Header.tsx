@@ -1,9 +1,12 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import React from 'react'
+import { Link } from "gatsby"
+import React from "react"
 import styled from 'styled-components'
-import { Cyans, Greyscale } from '../../UI/Colors'
-import { Header1 } from '../../UI/Typography'
+import { Cyans, Greyscale } from '../UI/Colors'
+import { Header1 } from '../UI/Typography'
+
+interface Props {
+  siteTitle: string
+}
 
 const SiteHeader = styled.div`
   display: flex;
@@ -19,24 +22,12 @@ const SiteTitle = styled(Header1)`
   font-family: 'Montserrat', sans-serif;
 `
 
-const Header = ({ siteTitle }: { siteTitle: any }) => (
+const Header = ({ siteTitle }: Props) => (
   <SiteHeader>
     <SiteTitle>
-
       {siteTitle}
-
     </SiteTitle>
-
-
   </SiteHeader >
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: `Kieku Teknologia`,
-}
 
 export default Header
