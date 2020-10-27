@@ -6,7 +6,8 @@ const preferDefault = m => (m && m.default) || m
 
 exports.components = {
   "component---cache-dev-404-page-js": hot(preferDefault(require("/Users/nicholashart/Desktop/Kieku_Gatsby_Site/.cache/dev-404-page.js"))),
-  "component---src-pages-404-js": hot(preferDefault(require("/Users/nicholashart/Desktop/Kieku_Gatsby_Site/src/pages/404.js"))),
-  "component---src-pages-index-ts": hot(preferDefault(require("/Users/nicholashart/Desktop/Kieku_Gatsby_Site/src/pages/index.ts")))
+  "component---src-pages-404-tsx": hot(preferDefault(require("/Users/nicholashart/Desktop/Kieku_Gatsby_Site/src/pages/404.tsx"))),
+  "component---src-pages-index-tsx": hot(preferDefault(require("/Users/nicholashart/Desktop/Kieku_Gatsby_Site/src/pages/index.tsx"))),
+  "component---src-pages-using-typescript-tsx": hot(preferDefault(require("/Users/nicholashart/Desktop/Kieku_Gatsby_Site/src/pages/using-typescript.tsx")))
 }
 
