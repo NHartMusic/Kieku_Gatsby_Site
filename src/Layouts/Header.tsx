@@ -1,8 +1,7 @@
-import { Link } from "gatsby"
 import React from "react"
 import styled from 'styled-components'
 import { Cyans, Greyscale } from '../UI/Colors'
-import { Header1 } from '../UI/Typography'
+import { Title, MenuLink } from '../UI/Typography'
 
 interface Props {
   siteTitle: string
@@ -15,7 +14,7 @@ const SiteHeader = styled.div`
   padding: 20px;
 `
 
-const SiteTitle = styled(Header1)`
+const SiteTitle = styled(Title)`
   display: flex;
   margin: 0 auto;
   color: ${ Greyscale[2]};
@@ -25,7 +24,9 @@ const SiteTitle = styled(Header1)`
 const Header = ({ siteTitle }: Props) => (
   <SiteHeader>
     <SiteTitle>
-      {siteTitle}
+      <MenuLink to='/'>
+        {siteTitle}
+      </MenuLink>
     </SiteTitle>
   </SiteHeader >
 )

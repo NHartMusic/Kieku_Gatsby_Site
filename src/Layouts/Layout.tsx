@@ -5,11 +5,12 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React, { ReactNode } from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React, { ReactNode } from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import Header from "./header"
-import "./layout.css"
+import Header from './Header'
+import Footer from './Footer'
+import './layout.css'
 
 interface Props {
     children: ReactNode
@@ -37,14 +38,9 @@ const Layout = ({ children }: Props) => {
                 }}
             >
                 <main>{children}</main>
-                <footer style={{
-                    marginTop: `2rem`
-                }}>
-                    © {new Date().getFullYear()}, Built with
-          {` `}
-                    <a href="https://www.gatsbyjs.com">Gatsby</a>
-                </footer>
+
             </div>
+            <Footer siteTitle={data.site.siteMetadata?.title || `Title`} />
         </>
     )
 }
