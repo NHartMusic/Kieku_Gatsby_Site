@@ -25,7 +25,7 @@ function StaticQueryDataRenderer({ staticQueryData, data, query, render }) {
   return (
     <React.Fragment>
       {finalData && render(finalData)}
-      {!finalData && <div></div>}
+      {!finalData && <div>Loading (StaticQuery)</div>}
     </React.Fragment>
   )
 }
@@ -54,7 +54,7 @@ const useStaticQuery = query => {
   ) {
     throw new Error(
       `You're likely using a version of React that doesn't support Hooks\n` +
-      `Please update React and ReactDOM to 16.8.0 or later to use the useStaticQuery hook.`
+        `Please update React and ReactDOM to 16.8.0 or later to use the useStaticQuery hook.`
     )
   }
   const context = React.useContext(StaticQueryContext)
@@ -76,8 +76,8 @@ useStaticQuery(graphql\`${query}\`);
   } else {
     throw new Error(
       `The result of this StaticQuery could not be fetched.\n\n` +
-      `This is likely a bug in Gatsby and if refreshing the page does not fix it, ` +
-      `please open an issue in https://github.com/gatsbyjs/gatsby/issues`
+        `This is likely a bug in Gatsby and if refreshing the page does not fix it, ` +
+        `please open an issue in https://github.com/gatsbyjs/gatsby/issues`
     )
   }
 }
@@ -92,9 +92,9 @@ StaticQuery.propTypes = {
 function graphql() {
   throw new Error(
     `It appears like Gatsby is misconfigured. Gatsby related \`graphql\` calls ` +
-    `are supposed to only be evaluated at compile time, and then compiled away. ` +
-    `Unfortunately, something went wrong and the query was left in the compiled code.\n\n` +
-    `Unless your site has a complex or custom babel/Gatsby configuration this is likely a bug in Gatsby.`
+      `are supposed to only be evaluated at compile time, and then compiled away. ` +
+      `Unfortunately, something went wrong and the query was left in the compiled code.\n\n` +
+      `Unless your site has a complex or custom babel/Gatsby configuration this is likely a bug in Gatsby.`
   )
 }
 

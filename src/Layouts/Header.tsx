@@ -11,6 +11,9 @@ const SiteHeader = styled.div`
   display: flex;
   margin: 0 auto;
   background-color: ${ Cyans[3]};
+
+  width: 100%;
+  height: 100%;
   padding: 20px;
 `
 

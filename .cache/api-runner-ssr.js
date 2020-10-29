@@ -1,6 +1,12 @@
 var plugins = [{
+      plugin: require('/Users/nicholashart/Desktop/Kieku_Gatsby_Site/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       plugin: require('/Users/nicholashart/Desktop/Kieku_Gatsby_Site/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
+    },{
+      plugin: require('/Users/nicholashart/Desktop/Kieku_Gatsby_Site/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
+      options: {"plugins":[],"fonts":["Montserrat","Roboto"],"display":"swap"},
     },{
       plugin: require('/Users/nicholashart/Desktop/Kieku_Gatsby_Site/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"keiku_teknologia","short_name":"kieku","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/gatsby-icon.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"4a9773549091c227cd2eb82ccd9c5e3a"},
