@@ -7,8 +7,8 @@ import Image from "../components/Gatsby-Image"
 import { Circle } from '../UI/ScrollElements'
 import { SEO } from "../components/SEO"
 //UI
-import { Title, ParagraphRegular } from '../UI/Typography'
-import { ContentCentered } from '../UI/Containers'
+import { Title, TextWrapper, ParagraphRegular } from '../UI/Typography'
+
 
 const CircleContainer = styled.div`
     display: flex;
@@ -23,14 +23,17 @@ const HomeTitle = styled(Title)`
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <ContentCentered>
+
+    <TextWrapper>
       <HomeTitle>Welcome</HomeTitle>
-      <CircleContainer>
-        <Circle />
-        <Circle />
-        <Circle />
-      </CircleContainer>
-    </ContentCentered>
+    </TextWrapper>
+
+    <CircleContainer>
+      <Circle />
+      <Circle />
+      <Circle />
+    </CircleContainer>
+
 
 
 

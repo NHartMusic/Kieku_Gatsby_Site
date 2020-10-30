@@ -3,5 +3,6 @@ import styled from 'styled-components'
 export const ContentCentered = styled.div`
     display: flex;
     margin: 0 auto;
-    width: 100%100%;
+    width: 100%;
+    height: 100%;
 `

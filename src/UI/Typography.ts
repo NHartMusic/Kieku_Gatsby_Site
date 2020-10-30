@@ -17,6 +17,11 @@ export const ParagraphRegular = styled.p`
     font-size: 14px;
 `
 
+export const TextWrapper = styled.div`
+  display: flex;
+  margin: 20px 0px;
+`
+
 export const MenuLink = styled(Link)`
     text-decoration: none;
     color: ${ Greyscale[2]};

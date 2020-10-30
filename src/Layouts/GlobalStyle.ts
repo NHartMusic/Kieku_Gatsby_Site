@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import theme from './theme';
-import mixins from './mixin';
+
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -25,9 +25,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${theme.fonts.base};
     font-size: ${theme.fontSizes.base};
   }
-  a {
-    ${mixins.link};
-  }
+
   img {
     width: 100%;
     max-width: 100%;
